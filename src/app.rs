@@ -53,10 +53,10 @@ pub fn App() -> impl IntoView {
     }
 }
 
-#[server(GetServerData, "/api")]
-async fn get_server_data() -> Result<String, ServerFnError> {
-    Ok("data from server".to_string())
-}
+// #[server(GetServerData, "/api")]
+// async fn get_server_data() -> Result<String, ServerFnError> {
+//     Ok("data from server".to_string())
+// }
 
 /// Renders the home page of your application.
 #[component]
