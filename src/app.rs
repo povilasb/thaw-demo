@@ -61,15 +61,15 @@ async fn get_server_data() -> Result<String, ServerFnError> {
 /// Renders the home page of your application.
 #[component]
 fn HomePage() -> impl IntoView {
-    let (data, set_data) = signal(String::new());
-    Effect::new(move |_| spawn_local(async move {
-        let data = get_server_data().await.unwrap();
-        set_data.set(data);
-    }));
+    // let (data, set_data) = signal(String::new());
+    // Effect::new(move |_| spawn_local(async move {
+    //     let data = get_server_data().await.unwrap();
+    //     set_data.set(data);
+    // }));
 
     view! {
         <div>
-        <p>{move || data.get()}</p>
+        // <p>{move || data.get()}</p>
         </div>
     }
 }
