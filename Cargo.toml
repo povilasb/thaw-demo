@@ -15,7 +15,7 @@ leptos_axum = { version = "0.8.2", optional = true }
 leptos_meta = { version = "0.8.2" }
 tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
 wasm-bindgen = { version = "=0.2.100", optional = true }
-thaw = { git = "https://github.com/thaw-ui/thaw", branch = "thaw/v0.5", features = ["ssr"]}
+thaw = { git = "https://github.com/thaw-ui/thaw", branch = "thaw/v0.5" }
 
 [features]
 hydrate = [
@@ -30,7 +30,6 @@ ssr = [
     "leptos/ssr",
     "leptos_meta/ssr",
     "leptos_router/ssr",
-    "thaw/ssr",
 ]
 
 # Defines a size-optimized profile for the WASM bundle in release mode
